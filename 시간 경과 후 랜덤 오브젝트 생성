@@ -11,4 +11,10 @@ void Update(){
               // x,y,z 좌표값을 각각 다른 범위에서 랜덤하게 정해지도록 만들었다.
               float newX = Random.Range(-10f, 10f), newY = Random.Range(-50f, 50f), newZ = Random.Range(-100f, 100f);
               
+               // 생성할 오브젝트를 불러온다.
+              GameObject monster = Instantiate(Monster);
+
+              // 불러온 오브젝트를 랜덤하게 생성한 좌표값으로 위치를 옮긴다.
+              moster.transform.position = new Vector3(newX, newY, newZ);
+
   }
