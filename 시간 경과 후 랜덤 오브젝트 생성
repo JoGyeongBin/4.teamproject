@@ -1,0 +1,9 @@
+// 시간을 담당할 변수를 하나 만들어준다.
+float currTime;
+
+// 반복되는 작업이므로 업데이트 함수 안에서 코드를 입력한다.
+void Update(){
+  // 시간이 흐르게 만들어준다.
+  currTime += Time.deltatime;
+  
+  }
