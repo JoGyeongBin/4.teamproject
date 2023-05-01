@@ -16,5 +16,8 @@ void Update(){
 
               // 불러온 오브젝트를 랜덤하게 생성한 좌표값으로 위치를 옮긴다.
               moster.transform.position = new Vector3(newX, newY, newZ);
-
+              
+               // 시간을 0으로 되돌려주면, 10초마다 반복된다.
+              currTime = 0;
+          }    
   }
