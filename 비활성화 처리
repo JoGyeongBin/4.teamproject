@@ -12,3 +12,11 @@ public class GameManger : MonoBehaviour
         m_goText = GameObject.Find("Canvas/Text");
         m_goText.GetComponent<Text>().text = "1";
     }
+    void Update()
+    {
+        if (!m_bPause)
+        {
+            m_fCount += Time.deltaTime;
+            m_goText.GetComponent<Text>().text = "";
+            m_goText.GetComponent<Text>().text += (int)m_fCount;
+        }
