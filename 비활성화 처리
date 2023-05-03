@@ -20,3 +20,11 @@ public class GameManger : MonoBehaviour
             m_goText.GetComponent<Text>().text = "";
             m_goText.GetComponent<Text>().text += (int)m_fCount;
         }
+         }
+        // 백버튼을 눌렀을 경우 게임 종료
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+    
