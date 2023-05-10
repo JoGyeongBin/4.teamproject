@@ -1,0 +1,2 @@
+private float[] bestScore = new float[5];
+private string[] bestName = new string[5];
