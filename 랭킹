@@ -35,3 +35,9 @@ void ScoreSet(float current Score, string currentName)
      currentName = tmpName;
      }
  }
+ //랭킹에 맞춰 점수와 이름 저장
+ for(int i =0;i<5;i++)
+ {
+       PalyerPrefs.SetFloat(i + "BestScore",bestScore[i]);
+       PalyerPrefs.SetString(i.ToStirng() + "BestName",bestScore[i]);
+  }
