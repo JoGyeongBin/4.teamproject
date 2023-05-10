@@ -18,3 +18,20 @@ void ScoreSet(float current Score, string currentName)
      bsetName[i] = PlayerPrefs.GetString(i + "BestName");
      
      //현재 점수가 랭킹에 오를 수 있을 때
+     while(bestScore[i]<currentScore)
+     {
+     //자리바꾸기
+     tmpScore = bestScore[i];
+     tmpName = bestName[i];
+     bestScore[i] = currentScore;
+     bestName[i] = currentName;
+     
+     //랭킹에 저장
+     PlayerPrefs.SetFloat(i+"BestScore",currentScore);
+     PlayerPrefs.SetString(i.ToString()+"BestName",currentName);
+     
+     //다음 반복을 위한 준비
+     currentScore = tmpScore;
+     currentName = tmpName;
+     }
+ }
