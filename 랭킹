@@ -10,3 +10,11 @@ void ScoreSet(float current Score, string currentName)
      
      float tmpScore = 0f;
      string tmpName = "";
+     
+     for(int i =0;i<5;i++)
+     {
+     //저장된 최고점수와 이름을 가져오기
+     bsetScore[i] = PlayerPrefs.GetFloat(i + "BestScore");
+     bsetName[i] = PlayerPrefs.GetString(i + "BestName");
+     
+     //현재 점수가 랭킹에 오를 수 있을 때
