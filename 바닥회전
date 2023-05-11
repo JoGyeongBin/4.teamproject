@@ -1,4 +1,3 @@
-using System.Threading.Tasks.Dataflow;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +10,6 @@ public class Rotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TransformBlock.Rotate(0f,rotationspeed,0f);
+        transform.Rotate(0f,rotationspeed,0f);
     }
 }
-TransformBlock.Rotate(float xAngle,float yAngle,float zAngle);
