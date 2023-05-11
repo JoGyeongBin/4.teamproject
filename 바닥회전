@@ -14,3 +14,4 @@ public class Rotator : MonoBehaviour
         TransformBlock.Rotate(0f,rotationspeed,0f);
     }
 }
+TransformBlock.Rotate(float xAngle,float yAngle,float zAngle);
