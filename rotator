@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     public float rotationSpeed = 60f;
-    private float timer = 5f;
+    private float timer = 5f;  // 시작 후 회전하는데 걸리는 시간
     private bool rotationStarted = false;
 
     void Update()
