@@ -1,4 +1,7 @@
-
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 // 처음 씬에서는 게임 설명과 방향키 연습 방법, 그 다음 씬은 본격적인 게임 시작
 void Update()
 {
