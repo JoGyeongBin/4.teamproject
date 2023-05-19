@@ -20,7 +20,7 @@ void Update(){
 
               // 불러온 오브젝트를 랜덤하게 생성한 좌표값으로 위치를 옮긴다.
               moster.transform.position = new Vector3(newX, newY, newZ);
-              
+              // 공이 나오는 위치를 몰라 게임하기 어려으므로 공이 나오기 전에 빨간 표시가 떴으면 좋겠음
                // 시간을 0으로 되돌려주면, 10초마다 반복된다.
               currTime = 0;
           }    
