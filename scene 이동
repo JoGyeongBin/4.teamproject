@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 void Update()
 {
 if(Input.GetMouseButtonDown(0)){
-SceneManager.LoadScene("SampleScene");
+SceneManager.LoadScene("SampleScene"); // "Scene 이름" 으로 해야함
 }
 }
