@@ -2,7 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+public class GameManger : MonoBehaviour
+{
+    GameObject m_goText;
+    float m_fCount = 0;
+    bool m_bPause = false;
+    void Start()
+    {
+        m_goText = GameObject.Find("Canvas/Text");
+        m_goText.GetComponent<Text>().text = "1";
+    }
     void Update()
     {
         if (!m_bPause)
