@@ -1,1 +1,6 @@
 
+1. 원하는 이미지를 유니티 속 적당한 폴더에 넣기
+2. Materia 생성하기
+3. 이미지를 Material-Albedo에 끌어다 넣기
+4. Material - Shader 를 Sprites - default로 변경
+//이미지 저장 후 이미지를 Materia 에 바로 넣기 가능
