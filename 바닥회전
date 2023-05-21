@@ -2,15 +2,4 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotator : MonoBehaviour
-{
-    // Start is called before the first frame update
-    public float rotationspeed = 60f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Rotate(0f,rotationspeed,0f);
-    }
-}
-Time.deltaTime 값은 프레임의 주기이자 초당 프레임의 역수를 취한 값이다. 따라서 Time.deltaTime를 회전값에 곱하면 주기를 1초로 맞출 수 있다.
