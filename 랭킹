@@ -1,4 +1,43 @@
 private float[] bestScore = new float[5];
 private string[] bestName = new string[5];
 
-
+//현재 플레이어의 점수와 이름을 받아서 실행
+void ScoreSet(float current Score, string currentName)
+{
+     //일단 현재에 저장하고 시작
+     PlayerPrefs.SetString("CurrentPlayerName",currentName);
+     PlayerPrefs.SetFloat("CurrentPlayerScore",currentScore);
+     
+     float tmpScore = 0f;
+     string tmpName = "";
+     
+     for(int i =0;i<5;i++)
+     {
+     //저장된 최고점수와 이름을 가져오기
+     bsetScore[i] = PlayerPrefs.GetFloat(i + "BestScore");
+     bsetName[i] = PlayerPrefs.GetString(i + "BestName");
+     
+     //현재 점수가 랭킹에 오를 수 있을 때
+     while(bestScore[i]<currentScore)
+     {
+     //자리바꾸기
+     tmpScore = bestScore[i];
+     tmpName = bestName[i];
+     bestScore[i] = currentScore;
+     bestName[i] = currentName;
+     
+     //랭킹에 저장
+     PlayerPrefs.SetFloat(i+"BestScore",currentScore);
+     PlayerPrefs.SetString(i.ToString()+"BestName",currentName);
+     
+     //다음 반복을 위한 준비
+     currentScore = tmpScore;
+     currentName = tmpName;
+     }
+ }
+ //랭킹에 맞춰 점수와 이름 저장
+ for(int i =0;i<5;i++)
+ {
+       PalyerPrefs.SetFloat(i + "BestScore",bestScore[i]);
+       PalyerPrefs.SetString(i.ToStirng() + "BestName",bestScore[i]);
+  }
