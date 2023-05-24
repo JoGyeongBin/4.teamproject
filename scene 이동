@@ -9,3 +9,22 @@ if(Input.GetMouseButtonDown(0)){
 SceneManager.LoadScene("SampleScene"); // "Scene 이름" 으로 해야함
 }
 }
+
+
+/* 팀장님 타이틀 scene 따로 만들고 START버튼 추가해서 게임 scene으로 넘어가게 하면 어때요>??
+click object에 추가할 script
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Title : MonoBehaviour 
+{
+    public void SceneChange() 
+    { // SampleScene으로 전환
+        SceneManager.LoadScene("SampleScene");
+    }
+ }
+ 
+*/
