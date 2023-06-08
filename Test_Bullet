@@ -13,7 +13,7 @@ public class Test_Bullet : MonoBehaviour
         bulletRigidbody = GetComponent<Rigidbody>();
         // 리지드바디의 속도 = 앞쪽 방향 * 이동 속력
         bulletRigidbody.velocity = transform.forward * speed;
-        
+        Destory(gameObject, 3f);
     }
    
 }
