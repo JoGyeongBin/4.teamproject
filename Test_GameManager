@@ -17,7 +17,7 @@ public class Test_GameManager : MonoBehaviour
     }
     void Update()
     {
-        surviveTime += time.deltaTime;
+        surviveTime += ime.deltaTime;
         // 갱신한 생존 시간을 timeText 텍스트 컴포넌트를 이용해 표시
         timeText.text = "Time: " + surviveTime;
     }
