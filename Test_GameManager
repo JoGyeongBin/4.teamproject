@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // UI 관련 라이브러
+using UnityEngine.SceneManagement; // 씬 관리 관련 라이브러리
+using TMPro;
+
 
 public class Test_GameManager : MonoBehaviour
 {
     public TMP_Text timeText; // 생존 시간을 표시할 텍스트 컴포넌트
-    private float surviveTime; 
+    private float surviveTime; //생존 시간
 
     void Start()
     {
@@ -13,8 +17,8 @@ public class Test_GameManager : MonoBehaviour
     }
     void Update()
     {
-        surviveTime += time.deltaTime;
+        surviveTime += Time.deltaTime;
         // 갱신한 생존 시간을 timeText 텍스트 컴포넌트를 이용해 표시
-        timeText.text = "Time: " + surviveTime;
+        timeText.text = "Time: " + (int)surviveTime;
     }
 }
