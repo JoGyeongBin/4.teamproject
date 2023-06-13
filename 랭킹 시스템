@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
 
             PlayerPrefs.SetFloat("BestTime3", bestTime3);
         }
-        // 1,2,3등 기록을 recordText 텍스트 컴포넌트를 이용해 표시
+        // 1등 2등 3 기록을 recordText 텍스트 컴포넌트를 이용해 표시
         recordText1.text = "Best Time1: " + (int)bestTime1;
         recordText2.text = "Best Time2: " + (int)bestTime2;
         recordText3.text = "Best Time3: " + (int)bestTime3;

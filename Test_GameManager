@@ -1,4 +1,8 @@
+
 // 생존 기록만 표시, 랭킹은 표시하지 않음.
+
+// 연습 모드용 GameManager.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
