@@ -1,4 +1,6 @@
-
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 // 시간을 담당할 변수를 하나 만들어준다.
 float currTime;
