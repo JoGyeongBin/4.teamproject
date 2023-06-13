@@ -5,6 +5,7 @@ using UnityEngine.UI; //UI 관련 라이브러리
 using UnityEngine.SceneManagement;//씬 관리 관련 라이브러리
 using TMPro;
 
+
 public class GameManager : MonoBehaviour
 {
     public GameObject gameoverText;//게임오버 시 활성화할 텍스트 게임 오브젝트
